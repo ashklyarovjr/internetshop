@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Дідова пасіка</title>
+
+    <!-- Bootstrap -->
+    <link href="css/index.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+</head>
+<body>
+<script>
+    $(document).ready(function () {
+        $('#modal-container').load('products.html #myModal');
+    });
+</script>
+
+<style>
+    .carousel-caption {
+        color: black;
+        font-family: Helvetica, sans-serif;
+    }
+
+    .panel {
+        margin-top: 20px;
+    }
+
+    .footer-p {
+        font-family: monospace;
+        font-size: 14pt;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    #carousel-div {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .achievements {
+        font-weight: 300;
+        color: #DA7405;
+        text-align: center;
+    }
+
+    .list-on-panel {
+        font-size: 12pt;
+        text-shadow: 2px 2px 5px grey;
+    }
+
+    .carousel-text-p {
+        font-size: 12pt;
+    }
+
+    #top-par {
+        font-family: CenturyGothic, sans-serif;
+        font-weight: 500;
+    }
+
+    #bucket-btn {
+        margin: 10% 0 0 8pt;
+    }
+
+    @media (max-width: 200px) {
+        footer,
+        .carousel-text,
+        .par-on-panel,
+        .list-on-panel {
+            font-size: 50%;
+        }
+    }
+
+    @media (min-width: 200px) {
+        footer,
+        .carousel-text,
+        .par-on-panel,
+        .list-on-panel {
+            font-size: 70%;
+        }
+    }
+
+    @media (min-width: 787px) {
+        footer,
+        .carousel-text,
+        .par-on-panel,
+        .list-on-panel {
+            font-size: 100%;
+        }
+    }
+
+
+</style>
+<div class="container">
+    <div class="col-lg-12">
+        <div id="head-pic-row" class="row">
+            <div class="container-fluid">
+                <a href="main.html">
+                    <img src="pics/logo.png" id="header_pic" class="center-block"
+                         alt="responsive image">
+                </a>
+            </div>
+        </div>
+
+        <div id="navbar-carousel-row" class="row">
+            <div class="container-fluid">
+                <nav class="navbar navbar-default" role="navigation">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                    data-target="#navbar-collapse-1">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <div id="navbar-collapse-1" class="collapse navbar-collapse">
+                            <ul id="navbar-links" class="nav navbar-nav">
+                                <li class="active"><a href="main.html">Главная</a></li>
+                                <li><a href="about.html">О нас</a></li>
+                                <li><a href="products.html">Продукция</a></li>
+                                <li class="divider-vertical"></li>
+                                <li><a href="recipes.html">Медовые рецепты</a></li>
+                            </ul>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li class="divider"></li>
+                                <li>
+                                    <button type="button" role="button" class="btn btn-primary" data-toggle="modal"
+                                            data-target="#myModal" id="bucket-btn">Корзина
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <div class="container-fluid" class="center-block" id="carousel-div">
+                <div id="carousel-generic" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-generic" data-slide-to="2"></li>
+                        <li data-target="#carousel-generic" data-slide-to="3"></li>
+                    </ol>
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="pics/honey1.png" alt="first-honey">
+
+                            <div class="carousel-caption">
+                                <h3 class="carousel-text">Знаете ли вы, что...</h3>
+
+                                <p class="carousel-text carousel-text-p">Мед имеет удивительные свойства: в течении
+                                    многих лет он сохраняет свои качества, не покрывается плесенью. Это свойство меда
+                                    использовали еще стародавние римляне – они консервировали им редкую дичь, которую
+                                    доставляли из дальних стран. Залитая медом дичь сохраняла свою свежесть, вкус и вид.
+                                    Известно и другое. Тело Александра Македонского, который умер вовремя похода, было
+                                    доставлено в столицу Македонии погруженным в мед. Лишь с открытием антибиотиков,
+                                    которые были обнаружены и в меде, стали понятны его противомикробные свойства.</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="pics/honey2.png" alt="second-honey">
+
+                            <div class="carousel-caption">
+                                <div class="container-fluid">
+                                    <h3 class="carousel-text">Занете ли вы, что...</h3>
+
+                                    <p class="carousel-text carousel-text-p">Чтобы собрать нектар для одной ложки меда
+                                        (30г), пчела должна сделать 200 вылетов. Во время интенсивного медосбора она
+                                        делает за день приблизительно 10 вылетов. Таким образом, чтобы угостить вас
+                                        ложечкой душистого меда, 200 пчел должны трудиться полный рабочий день. Во время
+                                        медосбора за нектаром летает около половины пчел семьи. Такимобразом, в семье
+                                        массой 5 кг за нектаром вылетает 2,5 кг или 25 тыс. пчел. Если каждая пчела
+                                        сделает 10 вылетов, то все вылетающие пчелы сделают 250 тыс. полетов и могут
+                                        принести в улей 7,5 кг нектара. При этом пчелы пролетают расстояние, которое
+                                        составляет 2 млн. 750 тыс. километров.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="pics/honey3.png" alt="third-honey">
+
+                            <div class="carousel-caption">
+
+                                <h3 class="carousel-text">Знаете ли вы, что...</h3>
+
+                                <p class="carousel-text carousel-text-p">Малышам, которым вместо сахара дают мед, лучше
+                                    набирают вес, не страдают диареей. В их крови увеличивается количество гемоглобина и
+                                    красных кровяных телец, потому что железо, медь и марганец, которые входят в состав
+                                    меда, способствуют улучшению состава крови.</p>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="pics/honey4.png" alt="fourth-honey">
+
+                            <div class="carousel-caption">
+
+                                <h3 class="carousel-text">Знаете ли вы, что...</h3>
+
+                                <p class="carousel-text carousel-text-p">Чтобы собрать среднюю ношу нектара, пчела
+                                    должна посетить примерно 270 цветков гречки или 140 цветков подсолнечника. В день
+                                    пчела посещает соответственно 2700 или 1400 цветков, а чтобы собрать нектар для
+                                    одной ложки меда, пчелы должны поработать на 800 тыс. цветков гречки или 400 тыс.
+                                    цветков подсолнечника.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a class="left carousel-control" href="#carousel-generic" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-generic" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="text-row" class="row">
+            <div class="container-fluid">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <h3 class="par-on-panel" id="top-par"> "Искусная работа пчёл славит Творца..."</h3>
+
+                        <p class="par-on-panel" id="mid-par">
+                            Пчелы-труженицы ежегодно дают человеку сотни тысяч тонн меда. По выражению Д.Мора «Пчела -
+                            лучший маленький друг, какой только имеется у человека на свете». В сокровищнице народной
+                            медицины пчелиный мед занимает почетное место.</p>
+
+                        <p class="par-on-panel" id="bot-par">Сегодня более 400 тысяч украинцев являются
+                            профессиональными пчеловодами или любителями в области пчеловодства. Количество пчелиных
+                            семей в Украине составляет примерно 3,5 миллиона, а среднегодовое валовое производство меда
+                            составляет около 70 тысяч тонн. Данная отрасль демонстрирует стремительный рост. Украина
+                            занимает пятое место в мире по объемам производства меда - после Китая, Индии, Аргентины и
+                            США и имеет все основания называтся Европейским Медовым краем.</p>
+
+                        <h3 class="par-on-panel achievements">
+                            Мед ТМ «ДІДОВА ПАСІКА» - ЛАУРЕАТ областного конкурса качества «Лучшая продукция ХАРЬКОВЩИНЫ»
+                            2011 года!
+                        </h3>
+                        <ul class="list-on-panel" id="acievements-list">
+                            Мед ТМ «ДІДОВА ПАСІКА»:
+                            <li>Собран на частных пасеках Харьковской области в экологически чистых районах</li>
+                            <li>Расфасован согласно современным требованиям производства пищевых продуктов</li>
+                            <li>Это полезный, удобно расфасованный, доступный по цене, экологически чистый продукт,
+                                который НЕ содержит красителей, консервантов и ГМО
+                            </li>
+                        </ul>
+                        <h3 class="par-on-panel achievements">
+                            С НАШИМ МЕДОМ И ЛАПОТЬ ПРОГЛОТИШЬ!!!
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p class="footer-p">Anton Shklyarov. Copyright 2015.</p>
+    </footer>
+</div>
+<div class="container" id="modal-container"></div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.js"></script>
+</body>
+</html>

@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Дідова пасіка</title>
+
+    <!-- Bootstrap -->
+    <link href="css/index.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+</head>
+<body id="body">
+<script>
+    $(document).ready(function () {
+        $('#modal-container').load('products.html #myModal');
+    });
+</script>
+<style>
+    .bottom-pics {
+        padding-top: 20px;
+    }
+
+    .footer-p {
+        font-family: monospace;
+        font-size: 14pt;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    #bucket-btn {
+        margin: 10% 0 0 10%;
+    }
+
+    #greetings {
+        text-align: center;
+    }
+
+    .ingredients {
+        list-style-type: none;
+    }
+</style>
+<div class="container">
+    <div class="col-md-12">
+        <div id="head-pic-row" class="row">
+
+            <div class="container-fluid">
+                <a href="main.html">
+                    <img src="pics/logo.png" id="header_pic" class="center-block" class="img-responsive"
+                         alt="head image">
+                </a>
+            </div>
+
+        </div>
+
+        <div id="navbar-carousel-row" class="row">
+            <div class="container-fluid">
+                <nav class="navbar navbar-default" role="navigation">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                    data-target="#navbar-collapse-1">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <div id="navbar-collapse-1" class="collapse navbar-collapse">
+                            <ul id="navbar-links" class="nav navbar-nav">
+                                <li><a href="main.html">Главная</a></li>
+                                <li><a href="about.html">О нас</a></li>
+                                <li><a href="products.html">Продукция</a></li>
+                                <li class="active"><a href="recipes.html">Медовые рецепты</a></li>
+                            </ul>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li>
+                                    <button role="button" type="button" class="btn btn-primary" data-toggle="modal"
+                                            data-target="#myModal" id="bucket-btn">Корзина
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div id="text-row" class="row">
+            <div class="container-fluid">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <p class="par-on-panel">
+                                    Вопрос долголетия волновал умы людей всех времен, стран и народов. Сб этом
+                                    свидетельствуют иероглифы Древнего Египта и Китая, древние памятники Индии и
+                                    Греции. Для поддержания здоровой и долгой жизни необходим правильный режим питания.
+                                    Мыслители и врачи древности придавали меду огромное значение, считая, что
+                                    употребление его в пищу способствует продлению человеческой жизни. Нередко люди,
+                                    регулярно питающиеся медом, доживают до глубокой старости.
+                                    Долгое время мед был основным источником сладости для человека, поэтому наложил
+                                    отпечаток на меню сладкого стола в Европе. Преимущественно мед использовался в
+                                    кондитерских изделиях (пряниках, ков¬рижках и др.), а также в напитках, на Среднем и
+                                    Ближнем Востоке -для заливки горячих кондитерских изделий (например пахлавы). После
+                                    появления сахара употребление меда в кулинарных и кондитерских изделиях резко
+                                    сократилось. Но сегодня, оценив максимальную полезность меда по его витаминному и
+                                    минеральному составам, осознав вредность рафинированных продуктов, в том числе
+                                    сахара, люди вновь обратились к натуральному продукту - меду.
+                                    Предлагаемые рецепты мучных кондитерских изделий, холодных и горячих медовых
+                                    напитков, овощных и фруктовых блюд с медом при правильном их подборе и
+                                    систематическом употреблении восполнят пробел в вашем ежедневном питании и позволят
+                                    корректировать витаминную и минеральную ценность суточного рациона на протяжении
+                                    всего года, продлят молодость, активное долголетие.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingOne">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
+                                   aria-expanded="true" aria-controls="collapseOne">
+                                    Напиток из овса
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel"
+                             aria-labelledby="headingOne">
+                            <div class="panel-body">
+                                <ul class="ingredients">
+                                    <li>Вода - 1,5 л</li>
+                                    <li>Овес -1,5 стакана</li>
+                                    <li>Мед - 1 ст. ложка</li>
+                                    <li>Лимон - 0,5 шт.</li>
+                                    <li></li>
+                                    <li>Выход - 1 л.</li>
+                                </ul>
+                                <p>Овес залить холодной водой и довести до кипения. Настаивать в теплом месте 3-4 ч. В
+                                    конце настаивания до¬бавить мелко нарезанную или натертую на крупной терке цедру
+                                    лимо¬на, процедить, добавить мед, лимонный сок. Подавать теплым.
+                                    Напитки, приготовленные на основе овсяных отваров и пшеничных отрубей, рекомендуются
+                                    не
+                                    только как утоляющие жажду, но и в лечебных целях людям, страдающим заболеваниями
+                                    сердечно-со¬судистой системы, желудочно-кишечного тракта, нарушением об¬мена
+                                    веществ; с
+                                    добавлением сушеных или свежих фруктов эти на-питки приобретают свойства
+                                    общеукрепляющих, тонизирующих.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingTwo">
+                            <h4 class="panel-title">
+                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"
+                                   aria-expanded="false" aria-controls="collapseTwo">
+                                    Напиток из инжира и моркови
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel"
+                             aria-labelledby="headingTwo">
+                            <div class="panel-body">
+                                <ul class="ingredients">
+                                    <li>Вода - 0,5 л</li>
+                                    <li>Инжир сушеный -1 стакан</li>
+                                    <li>Сок морковный - 1 стакан</li>
+                                    <li>Мед - по вкусу</li>
+                                    <li>Выход - 1 л.</li>
+                                </ul>
+                                <p>
+                                    Инжир хорошо промыть теплой водой, пропустить через мясоруб¬ку. Измельченную массу
+                                    залить кипятком, размешать, довести до ки-пения. Снять с огня и дать настояться 1-2
+                                    ч, процедить, добавить мед и охладить. Затем влить морковный сок.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingThree">
+                            <h4 class="panel-title">
+                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion"
+                                   href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Напиток каротиновый
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel"
+                             aria-labelledby="headingThree">
+                            <div class="panel-body">
+                                <ul class="ingredients">
+                                    <li>Вода - 1 стакан</li>
+                                    <li>Сок морковный - 2 стакана</li>
+                                    <li>Сок апельсиновый - 1 стакан</li>
+                                    <li>Лимон - 2 шт.</li>
+                                    <li>Мед - 1 ст. ложка</li>
+                                    <li>Выход - 1 л.</li>
+                                </ul>
+                                <p>
+                                    Мед растворить в кипяченой охлажденной воде, смешать с соком моркови, апельсина и
+                                    лимона. Хорошо охладить. При подаче в ста-кан положить кусочек лимона.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingFour">
+                            <h4 class="panel-title">
+                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion"
+                                   href="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                                    Напиток из меда и липовых цветков
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseFour" class="panel-collapse collapse" role="tabpanel"
+                             aria-labelledby="headingFour">
+                            <div class="panel-body">
+                                <ul class="ingredients">
+                                    <li>Вода - 10 л</li>
+                                    <li>Мед - 800 г</li>
+                                    <li>Липовых цветков столько, чтобы настой стал золотистого цвета</li>
+                                    <li>Лимонной кислоты по вкусу.</li>
+                                    <li>Выход - 1 л.</li>
+                                </ul>
+                                <p>
+                                    Высушенные цветки залить крутым кипятком, настоять полчаса, процедить, добавить мед
+                                    и лимонную кислоту. Напиток охладить.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingFive">
+                            <h4 class="panel-title">
+                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion"
+                                   href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    Сок лимона с медом
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseFive" class="panel-collapse collapse" role="tabpanel"
+                             aria-labelledby="headingFive">
+                            <div class="panel-body">
+                                <ul class="ingredients">
+                                    <li>Минеральная вода - 500 г (нарзан,боржоми)</li>
+                                    <li>Мед - 50 г</li>
+                                    <li>Сок 1 лимона</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingSix">
+                            <h4 class="panel-title">
+                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion"
+                                   href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    Медовуха
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseSix" class="panel-collapse collapse" role="tabpanel"
+                             aria-labelledby="headingSix">
+                            <div class="panel-body">
+                                <ul class="ingredients">
+                                    <li>Вода - 8-10 л</li>
+                                    <li>Мед - 3-3,5 кг</li>
+                                    <li>Хмель - 120-150 г</li>
+                                    <li>Дрожжи - 4 чайных ложки</li>
+                                </ul>
+                                <p>
+                                    Кипяченую воду остудить до комнатной температуры, добавить мед, хмель и дрожжи.
+                                    После брожения напиток профильтровать, охла¬дить, через 1,5-2 месяца он готов к
+                                    употреблению. Хранить в про¬хладном месте.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingSeven">
+                            <h4 class="panel-title">
+                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion"
+                                   href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                    Гоголь-моголь
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel"
+                             aria-labelledby="headingSeven">
+                            <div class="panel-body">
+                                <ul class="ingredients">
+                                    <li>Молоко - 2 стакана</li>
+                                    <li>Мед - 6 ст. ложек</li>
+                                    <li>Яйцо - 1 шт.</li>
+                                    <li>Лимонный или апельсиновый сок - 2 ст. ложки</li>
+                                </ul>
+                                <p>
+                                    Яйцо, холодное молоко, мед и сок смешать и взбить до полу¬чения однородной массы.
+                                    Подавать к столу в охлажденном виде.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="panel-group" id="accordion1" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingEight">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion1" href="#collapseEight"
+                                   aria-expanded="true" aria-controls="collapseEight">
+                                    Медово-сливочный напиток с апельсиновым соком
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseEight" class="panel-collapse collapse in" role="tabpanel"
+                             aria-labelledby="headingEight">
+                            <div class="panel-body">
+                                <ul class="ingredients">
+                                    <li>Сливки - 100 г</li>
+                                    <li>Мед - 1 ст. ложка</li>
+                                    <li>Апельсиновый сок - 100 г</li>
+                                    <li>Желток - 1 шт</li>
+                                </ul>
+                                <p>
+                                    Все хорошо перемешать, подавать холодным.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingNine">
+                            <h4 class="panel-title">
+                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion1"
+                                   href="#collapseNine"
+                                   aria-expanded="false" aria-controls="collapseNine">
+                                    Коктейль медовый
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseNine" class="panel-collapse collapse" role="tabpanel"
+                             aria-labelledby="headingNine">
+                            <div class="panel-body">
+                                <ul class="ingredients">
+                                    <li>Молоко - 100 г</li>
+                                    <li>Мед - 35 г</li>
+                                    <li>Желток - 1 шт</li>
+                                    <li>Корица - 2 г</li>
+                                    <li>Выход - 150 мл.</li>
+                                </ul>
+                                <p>
+                                    Перед употреблением коктейль посыпать молотой корицей.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingTen">
+                            <h4 class="panel-title">
+                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion1"
+                                   href="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                                    Пунш медовый "Апельсин"
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseTen" class="panel-collapse collapse" role="tabpanel"
+                             aria-labelledby="headingTen">
+                            <div class="panel-body">
+                                <ul class="ingredients">
+                                    <li>На 1 стакан напитка:</li>
+                                    <li>Вода - 100 мл</li>
+                                    <li>Сироп апельсиновый - 10 г</li>
+                                    <li>Сок апельсиновый - 10 г</li>
+                                    <li>Цедра лимона - 1 г</li>
+                                    <li>Гвоздика - 0,2 г</li>
+                                </ul>
+                                <p>
+                                    Цедру и гвоздику заварить кипящей водой, процедить, доба¬вить в напиток мед, сироп,
+                                    сок и перемешать, затем еще раз процедить и перелить в подготовленную посуду.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingEleven">
+                            <h4 class="panel-title">
+                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion1"
+                                   href="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+                                    Рябиновое варенье с медом
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseEleven" class="panel-collapse collapse" role="tabpanel"
+                             aria-labelledby="headingEleven">
+                            <div class="panel-body">
+                                <ul class="ingredients">
+                                    <li>Ягоды рябины - 500 г</li>
+                                    <li>Сахар - 300 г</li>
+                                    <li>Мед - 450 г</li>
+                                    <li>Выход - 1 кг варенья</li>
+                                </ul>
+                                <p>
+                                    Собранные после первых морозов ягоды рябины перебрать, уда¬лить плодоножки, промыть
+                                    в холодной воде и облить кипятком. Затем положить залить горячим сиропом примерно на
+                                    1-1,5 ч, после чего варить до легкого загустения си¬ропа. Чтобы ягоды хорошо
+                                    пропитались сладостью, их необходимо выдержать в сиропе в течение 6-7 ч, после чего
+                                    снова варить до готовности.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingTwelve">
+                            <h4 class="panel-title">
+                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion1"
+                                   href="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+                                    Торт "Пчелка"
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseTwelve" class="panel-collapse collapse" role="tabpanel"
+                             aria-labelledby="headingTwelve">
+                            <div class="panel-body">
+                                <ul class="ingredients">
+                                    <li>Мука - 3 стакана</li>
+                                    <li>Маргарин - 150 г</li>
+                                    <li>Сахар-песок - 6 ст. ложек</li>
+                                    <li>Дрожжи - 30 г</li>
+                                    <li>Начинка:</li>
+                                    <li>Мед - 80 г</li>
+                                    <li>миндаль орехи - 200 г</li>
+                                    <li>горький миндаль - 5 плодов</li>
+                                    <li>дрожжи -30 г</li>
+                                    <li>яйца - 4 шт.</li>
+                                    <li>молоко - 4 ст. ложки</li>
+                                    <li>соль - щепотка</li>
+                                </ul>
+                                <p>
+                                    Приготовить дрожжевое тесто. В мед добавить маргарин, сахар, прокипятить, положить
+                                    натертый сладкий и горький миндаль. Когда масса остынет, добавить яйца, молоко,
+                                    соль. Полученную массу вы¬ложить на тесто. Печь 25 мин.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingThirteen">
+                            <h4 class="panel-title">
+                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion1"
+                                   href="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
+                                    Пасечный торт
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseThirteen" class="panel-collapse collapse" role="tabpanel"
+                             aria-labelledby="headingThirteen">
+                            <div class="panel-body">
+                                <ul class="ingredients">
+                                    <li>Мука - 3 стакана</li>
+                                    <li>Мед - 400 г</li>
+                                    <li>Сахар - 1 стакан</li>
+                                    <li>Яйца - 5 шт.</li>
+                                    <li>Сметана - 1 стакан</li>
+                                    <li>Гвоздика и корица размельченная (немного)</li>
+                                    <li>Сода - 1 ч. ложка</li>
+                                </ul>
+                                <p>
+                                    Растопить мед, взять сахар, яйца, сметану, немного гвоздики и корицы размельченной,
+                                    добавить соду, муку, все перемешать до густоты сметаны. Затем тесто вылить на
+                                    противень, смазанный мас¬лом, и выпекать в духовке при умеренной температуре.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingFourteen">
+                            <h4 class="panel-title">
+                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion1"
+                                   href="#collapseFourteen" aria-expanded="false" aria-controls="collapseFourteen">
+                                    Медовое пирожное
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseFourteen" class="panel-collapse collapse" role="tabpanel"
+                             aria-labelledby="headingFourteen">
+                            <div class="panel-body">
+                                <ul class="ingredients">
+                                    <li>Пшеничная мука - 450 г</li>
+                                    <li>Яйца - 7 шт</li>
+                                    <li>Сливочное масло - 100 г</li>
+                                    <li>Мед - 300 г</li>
+                                    <li>Соль по вкусу</li>
+                                    <li>Для обжаривания: сливочного масла - 200 г</li>
+                                    <li>Выход - 1 кг</li>
+                                </ul>
+                                <p>
+                                    В пшеничную муку положить сливочное масло и взбить яйца, подсолить. Полученную смесь
+                                    перемешать до получения однородной массы средней густоты. Приготовленное тесто
+                                    раскатать жгутом и разрезать на тонкие (1-1,5 см) кусочки. Жарить в топленом масле
+                                    до получения светло-соломенного цвета. Обжаренные порции теста положить в разогретый
+                                    на слабом огне мед, осторожно перемешать.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <footer>
+            <p class="footer-p">Anton Shklyarov. Copyright 2015.</p>
+        </footer>
+
+        <div class="container" id="modal-container"></div>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.js"></script>
+</body>
+</html>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Дідова пасіка</title>
+
+    <!-- Bootstrap -->
+    <link href="css/index.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+</head>
+<body id="body">
+<script>
+    $(document).ready(function () {
+        $('#modal-container').load('products.html #myModal');
+    });
+</script>
+<style>
+    .carousel-caption {
+        color: black;
+        font-family: Helvetica, sans-serif;
+    }
+
+    .bottom-pics {
+        padding-top: 20px;
+    }
+
+    #contacts-head {
+        text-align: center;
+    }
+
+    #honey-pic {
+        padding-left: 20px;
+    }
+
+    #expert-pic {
+        padding-left: 20px;
+    }
+
+    .panel {
+
+    }
+
+    .footer-p {
+        font-family: monospace;
+        font-size: 14pt;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    #carousel-row {
+        margin-right: auto;
+
+    }
+
+    #carousel-div {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .achievements {
+        font-weight: 300;
+        color: #DA7405;
+        text-align: center;
+    }
+
+    #contacts-info-long {
+        float: right;
+    }
+
+    .bottom-pics {
+
+    }
+
+    #boss-info {
+        float: right;
+    }
+
+    #bucket-btn {
+        margin: 10% 0 0 10%;
+    }
+
+    #greetings {
+        text-align: center;
+    }
+</style>
+<div class="container">
+    <div class="col-md-12">
+        <div id="head-pic-row" class="row">
+
+            <div class="container-fluid">
+                <a href="main.html">
+                    <img src="pics/logo.png" id="header_pic" class="center-block" class="img-responsive"
+                         alt="head image">
+                </a>
+            </div>
+
+        </div>
+
+        <div id="navbar-carousel-row" class="row">
+            <div class="container-fluid">
+                <nav class="navbar navbar-default" role="navigation">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                                    data-target="#navbar-collapse-1">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <div id="navbar-collapse-1" class="collapse navbar-collapse">
+                            <ul id="navbar-links" class="nav navbar-nav">
+                                <li><a href="main.html">Главная</a></li>
+                                <li class="active"><a href="about.html">О нас</a></li>
+                                <li><a href="products.html">Продукция</a></li>
+                                <li><a href="recipes.html">Медовые рецепты</a></li>
+                            </ul>
+                            <ul class="nav navbar-nav navbar-right">
+                                <li>
+                                    <button role="button" type="button" class="btn btn-primary" data-toggle="modal"
+                                            data-target="#myModal" id="bucket-btn">Корзина
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div id="text-row" class="row">
+            <div class="container-fluid">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-sm-2">
+                                    <figure>
+                                        <img src="for_site/boss.jpg" id="boss-pic" class="img-responsive"
+                                             alt="boss-img">
+                                        <figcaption>Щербак Татьяна Николаевна</figcaption>
+                                    </figure>
+                                </div>
+                                <div class="col-sm-9">
+                                    <p class="par-on-panel" id="boss-info">
+                                        ФЛП Щербак Т.Н. - предприятие по переработке продуктов пчеловодства. На базе
+                                        современных технологий производится обработка и расфасовка более чем 10 видов
+                                        натурального меда в разнообразную тару. Предприятие имеет в своей структуре
+                                        современный цех, фасовочные линии которого полуавтоматизированы.
+                                        Производственный процесс соответствует современным требованиям пищевой
+                                        промышленности. Продукция пользуется спросом на национальном рынке. Мед ТМ
+                                        «Дідова Пасіка» - лауреат областного конкурса « Лучшая продукция ХАРЬКОВЩИНЫ»
+                                        2011 года! Это экологически чистый продукт, который не содержит консервантов. В
+                                        своем составе мед натуральний имеет более 70 органических веществ, важных для
+                                        жизнедеятельности организма человека. Мед произведен из нектара медоносных
+                                        цветов экологически чистых регионов Украини. Мед расфасовывается в стеклянную и
+                                        пластиковую тару, что обеспечивает защиту от кислорода, потери влажности и
+                                        ароматических веществ. Удобство фасовки и полезность продукта, изысканный
+                                        дизайн, порционная дозировка, доступная цена – вот что привлекает наших
+                                        покупателей. Реализация в оптовых и розничных торговых точках. Мед ТМ «Дідова
+                                        Пасіка» пользуется популярностью у конечных потребителей, которые в свою очередь
+                                        отметили нетрадиционную фасовку и удобство в использовании продукции нашей
+                                        торговой марки.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="text-row" class="row">
+            <div class="container-fluid">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="col-xs-4 bottom-pics">
+                            <img src="for_site/diploma.jpg" id="diploma-pic" class="img-responsive img-rounded"
+                                 alt="diploma-img">
+                        </div>
+                        <div class="col-xs-4 bottom-pics">
+                            <img src="for_site/expert.png" id="expert-pic" class="img-responsive img-rounded"
+                                 alt="expert-img">
+                        </div>
+                        <div class="col-xs-4 bottom-pics">
+                            <img src="for_site/pic1-1.jpg" id="honey-pic" class="img-responsive img-rounded"
+                                 alt="honey-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="text-row" class="row">
+            <div class="container-fluid">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <h2 id="contacts-head" class="par-on-panel">Контакты</h2>
+
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <img src="pics/didova_paseka_grechaniy.jpg" id="contacts-pic"
+                                         class="img-responsive img-rounded" alt="contacts-pic">
+                                </div>
+                                <div class="col-sm-9">
+                                    <p class="par-on-panel contacts-info" id="contacts-info-long">
+                                        ФО-П Щербак Т.М. является производителем и дистрибьютором мёдо-продукции
+                                        торговой
+                                        марки «ДІДОВА ПАСІКА». В ассортименте представлены мед разнотравье, майский и
+                                        гречневый и в различных формах расфасовки.
+                                    </p>
+                                    <ul class="par-on-panel"> Мы предлагаем Вам:
+                                        <li>Оптовые цены</li>
+                                        <li>Высокое качество продукции</li>
+                                        <li>Широкий ассортимент</li>
+                                        <li>Информацию и консультации</li>
+                                        <li>Бесплатную доставку</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row center-block">
+
+                                <p class="par-on-panel" class="contacts-info" id="contacts-short-info">
+                                    63601, Украина, Харьковская обл.,<br>
+                                    ПГТ Шевченково, ул. Лермонтова, 17, кв.2<br>
+                                    Тел.: (050) 908-62-60, (050) 909-84-64<br>
+                                    E-mail: <a href="d1dova_pas1ka@ukr.net"
+                                               target="_blank">d1dova_pas1ka@ukr.net</a>
+                                    <br>
+                                </p>
+
+                                <h4 class="par-on-panel" id="greetings">Работая для Вас, мы будем рады
+                                    сотрудничеству с
+                                    Вами!</h4>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p class="footer-p">Anton Shklyarov. Copyright 2015.</p>
+        </footer>
+        <div class="container" id="modal-container"></div>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.js"></script>
+</body>
+</html>
